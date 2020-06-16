@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body id="app">
+  <div>
+    <span style="color: red;">
+      <span>{{name}}</span>
+    </span>
+  </div>
+  <!-- <script src="/dist/umd/vue.js"></script> -->
+  <script src="vue.js"></script>
+  <script>
+
+    const vm = new Vue({
+      el: '#app',
+      data() {
+        return {
+          name: 'kkc',
+          list: [1, 2, 3, { a: { A: 2 } }]
+        }
+      },
+      // template: '<div id="app"><span style="color: red;"> <span>{{name}}</span></span></div>'
+    })
+  </script>
+</body>
+
+</html>
